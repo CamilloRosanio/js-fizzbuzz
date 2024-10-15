@@ -40,9 +40,13 @@ Consigli del giorno:
 | # ESECUZIONE
 **********************************************************/
 
-const isValid_FizzBuzz = (i % 3 == 0) && (i % 5 == 0);
-const isValid_Fizz = (i % 5 == 0);
-const isValid_Buzz = (i % 3 == 0);
+// Dichiaro la variabile i
+let i;
+
+// DA CHIARIRE: come mai non mi rileva queste variabili all'interno del FOR se le uso al posto della condizione "scritta a mano" per intero?
+let isValid_FizzBuzz = (i % 3 == 0) && (i % 5 == 0);
+let isValid_Fizz = (i % 5 == 0);
+let isValid_Buzz = (i % 3 == 0);
 
 // Preparo i diversi tipi di output.
 const printFizzBuzz = ' FizzBuzz';
