@@ -49,9 +49,9 @@ let isValid_Fizz = (i % 5 == 0);
 let isValid_Buzz = (i % 3 == 0);
 
 // Preparo i diversi tipi di output.
-const printFizzBuzz = ' FizzBuzz';
-const printFizz = ' Fizz';
-const printBuzz = ' Buzz';
+const printFizzBuzz = 'FizzBuzz';
+const printFizz = 'Fizz';
+const printBuzz = 'Buzz';
 
 // PER OGNI (FOR) numero da 1 a 100 partendo da 1
 for (let i = 1; i <= 100; i++) {
@@ -59,16 +59,16 @@ for (let i = 1; i <= 100; i++) {
     // SE il numero è divisibile per 3 AND per 5
     if ((i % 3 == 0) && (i % 5 == 0)) {
         // ALLORA stampo l'output designato
-        console.log(i + printFizzBuzz)
+        console.log(printFizzBuzz)
     // ALTRIMENTI
     // SE il numero è divisibile per 3
     } else if (i % 3 == 0) {
         // ALLORA stampo l'output designato
-        console.log(i + printFizz)
+        console.log(printFizz)
     // ALTRIMENTI
     // SE il numero è divisibile per 5
     } else if (i % 5 == 0) {
-        console.log(i + printBuzz)
+        console.log(printBuzz)
     // ALTRIMENTI
     } else {
         // Stampo solo il numero senza output
