@@ -22,17 +22,22 @@ Consigli del giorno:
 
 // PER OGNI (FOR) numero da 1 a 100 partendo da 1
 
-// devo verificare se il numero è divisibile per 3 AND per 5
-    // SE il numero è divisibile per 3 AND per 5
-    // ALLORA preparo l'output "fizzbuzz"
+// SE il numero è divisibile per 3 AND per 5
+    // ALLORA preparo l'output "FizzBuzz"
 
-// SE il numero non è divisibile per 3 AND per 5
-    // ALLORA verifico se il numero è divisibile per 3
-    // E preparo l'output "fizz"
+    // ALTRIMENTI
 
-// SE il numero non è divisibile per 3
-    // ALLORA verifico se il numero è divisibile per 5
-    // E preparo l'output "buzz"
+// SE il numero è divisibile per 3
+    // ALLORA preparo l'output "Fizz"
+
+    // ALTRIMENTI
+
+// SE il numero è divisibile per 5
+    // ALLORA preparo l'output "Buzz"
+
+    // ALTRIMENTI
+
+// Stampo solo il numero in tutti gli altri casi
 
 
 
