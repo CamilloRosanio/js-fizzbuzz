@@ -49,9 +49,14 @@ Consigli del giorno:
 let i;
 
 // DA CHIARIRE: come mai non mi rileva queste variabili all'interno del FOR se le uso al posto della condizione "scritta a mano" per intero?
-let isValid_FizzBuzz = (i % 3 == 0) && (i % 5 == 0);
-let isValid_Fizz = (i % 5 == 0);
-let isValid_Buzz = (i % 3 == 0);
+
+// CORREZIONE DAL TUTOR: Le variabili dichiarate fuori dal ciclo non vengono utilizzate perchè 'i' non ha ancora un valore e le condizioni non sono verificabili.
+// Per questo sono state dichiarate all'interno del FOR.
+
+// let isValid_FizzBuzz = (i % 3 == 0) && (i % 5 == 0);
+// let isValid_Fizz = (i % 5 == 0);
+// let isValid_Buzz = (i % 3 == 0);
+
 
 // Preparo i diversi tipi di output.
 const printFizzBuzz = 'FizzBuzz';
@@ -61,22 +66,28 @@ const printBuzz = 'Buzz';
 // PER OGNI (FOR) numero da 1 a 100 partendo da 1
 for (let i = 1; i <= 100; i++) {
 
-    // SE il numero è divisibile per 3 AND per 5
-    if ((i % 3 == 0) && (i % 5 == 0)) {
+    // Dichiaro i criteri secondo cui viene assegnato ciascun output all'interno del CICLO.
+    let isValid_FizzBuzz = (i % 3 == 0) && (i % 5 == 0);
+    let isValid_Fizz = (i % 5 == 0);
+    let isValid_Buzz = (i % 3 == 0);
+
+    // SE il numero è divisibile per 3 AND per 5 (isValid)
+    // if ((i % 3 == 0) && (i % 5 == 0))
+    if (isValid_FizzBuzz) {
         // ALLORA stampo l'output designato
         console.log(printFizzBuzz)
     // ALTRIMENTI
-    // SE il numero è divisibile per 3
-    } else if (i % 3 == 0) {
+    // SE il numero è divisibile per 3 (isValid)
+    } else if (isValid_Fizz) {
         // ALLORA stampo l'output designato
         console.log(printFizz)
     // ALTRIMENTI
-    // SE il numero è divisibile per 5
-    } else if (i % 5 == 0) {
+    // SE il numero è divisibile per 5 (isValid)
+    } else if (isValid_Buzz) {
         console.log(printBuzz)
     // ALTRIMENTI
     } else {
-        // Stampo solo il numero senza output
+        // Stampo solo il numero.
         console.log(i)
     }
 
